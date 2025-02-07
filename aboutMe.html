@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles/template.css" />
+  <link rel="stylesheet" href="styles/aboutMeStyle.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Allura&family=Condiment&family=Delius+Swash+Caps&family=Doto:wght@100..900&family=Iceberg&family=Moirai+One&family=Nosifer&family=Pattaya&family=Poetsen+One&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik+Puddles&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&family=Splash&family=Zen+Dots&display=swap"
+    rel="stylesheet">
+  <link rel="shortcut icon" type="icon" sizes="32x32" href="assets/tabIcon/aboutMeIcon.png" />
+  <title>About Me</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="container-title">
+      <h1><a href="index.html" class="title">About Me</a></h1>
+    </div>
+    <div class="main-container border">
+      <video autoplay muted loop src="assets/Background.mp4" class="background-container"></video>
+      <div class="second-container">
+        <div class="text-overlay">
+          <div class="character-stats">
+            <div class="portrait" id="portrait">
+              <img src="./assets/faceReveal/macmemoji.png" class="profile-pic"
+                alt="image of emoji-style human with macbook laptop open" id="picture" />
+              <div class="overlay">
+                <button class="portait-reveal" onclick="revealFace()">Face Reveal</button>
+              </div>
+            </div>
+          </div>
+          <div class="mobile-view">
+            <div class="mobile-bio font" id="biography">
+              <p class="text">
+                Hello I'm a creative Front-end Web Develope. I like creating minimal UI designs that rethinks what a
+                website should look
+                like. On my spare time I'm somewhere listening to heavy rain while coding/video editing/builidng 3D
+                objects.
+              </p>
+              <button onclick="closeMobile()" class="close-btn">Close</button>
+            </div>
+            <div class="mobile-skill" id="skill">
+              <li class="skillset">
+                <ul id="html">HTML</ul>
+                <ul id="css">CSS</ul>
+                <ul id="js">Javascript</ul>
+                <ul id="react">React</ul>
+                <ul id="responsive">Responsive Design</ul>
+                <ul id="spline">Spline</ul>
+              </li>
+              <button onclick="closeMobile()" class="close-btn">Close</button>
+            </div>
+            <div class="mobile-experience" id="experience">
+              <p class="experience">1 <span>Year</span></p>
+              <button onclick="closeMobile()" class="close-btn">Close</button>
+            </div>
+            <div class="mobile-buttons">
+              <button class="m-list" onclick="openBio()" id="bio-btn">Biography</button>
+              <button class="m-list" onclick="openSkill()" id="skill-btn">Skillset</button>
+              <button class="m-list" onclick="openExperience()" id="experience-btn">Experience</button>
+            </div>
+          </div>
+          <div class="info-holder">
+            <div class="text-bio">
+              <h1 class="info-heading">Biography</h1>
+              <p class="text font">
+                Hello I'm a creative Front-end Web Developer. I like creating minimal UI designs that rethinks what a
+                website should look
+                like. On my spare time I'm somewhere listening to heavy rain while coding/video editing/builidng 3D
+                objects.
+              </p>
+            </div>
+            <div class="text-bio">
+              <h1 class="info-heading">Skillset</h1>
+              <li class="skillset">
+                <ul id="html"> HTML</ul>
+                <ul id="css">CSS</ul>
+                <ul id="js">Javascript</ul>
+                <ul id="react">React</ul>
+                <ul id="responsive">Responsive Design</ul>
+                <ul id="spline">Spline</ul>
+              </li>
+            </div>
+            <div class="text-bio">
+              <h1 class="info-heading">Experience</h1>
+              <p class="experience">1<span>Year</span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="link-container">
+      <ul class="nav-links  border" id="title">
+        <li><a href="projects.html" class="link">Projects</a></li>
+        <li><a href="contactMe.html" class="link">Contact</a></li>
+        <li>
+          <a href="index.html">
+            <div class="home-icon">
+            </div>
+          </a>
+        </li>
+        <li><a href="aboutMe.html" class="link">About</a></li>
+        <li><a href="Currently.html" class="link">Currently</a></li>
+      </ul>
+    </div>
+  </div>
+</body>
+<script src="script/script.js"></script>
+
+</html>

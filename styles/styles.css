@@ -1,0 +1,142 @@
+.bio{
+  display:flex;
+  flex-direction:column;
+  gap:25px;
+}
+.greeting-text,.sub-bio-field{
+  font-size:var(--main-font-size);
+}
+.sub-second-text{
+  color:transparent;
+  font-size:2rem;
+  background:linear-gradient( to right, var(--main-color),black,var(--main-color));
+  background-clip:text;
+  background-size:200% auto;
+  animation:gradientAnimation 2s linear infinite;
+}
+.character{
+  font-size:clamp(2.2rem, 5.5vw, 5rem);
+  animation:nameTransition 1.8s;
+}
+.multiple-skill-holder{
+  display:flex;
+  justify-content:center;
+}
+.sub-bio-field{
+  display:flex;
+} 
+.sub-bio-field span::before{
+  position:relative;
+  color:var(--secondary-color);
+  content:"Frontend Web Developer";
+  animation: character-traits 10s  infinite;
+} 
+@keyframes gradientAnimation{
+  0%{
+      background-position:200% 50%;
+  }
+  100%{
+      background-position: 0% 50%
+  }
+}
+@keyframes character-traits{
+   0%{
+    }
+    20%{
+       content:"Frontend Web Developer";
+    }
+    40%{
+      opacity:1;
+      content:"Designer";
+    }
+    60%{
+      opacity:1;
+      content:"Coder";
+    }
+    80%{
+      opacity:1;
+      content:"Video-Editor";
+    }
+    100%{
+       content:"Human Being"
+    }
+}
+@keyframes title-transition{
+  0%{
+   opacity:0;
+   transform:translateY(0px) scale(1.2);
+  }
+  100%{
+   opacity:1;
+   transform:translateY(0px) scale(1)
+  }
+}
+@keyframes intro-transition{
+  100%{
+  opacity:1;
+  transform:translateY(0px) scale(1);
+  }
+
+  0%{
+   opacity:0;
+   transform:translateX(0px) scale(1.2);
+  }
+}
+@keyframes links-transition{
+  0%{
+  opacity:0;
+  transform:translateY(0px) scale(0.7);
+  }
+  25%{
+    opacity:0;
+  }
+  50%{
+    opacity:0;
+  }
+  100%{
+   opacity:1;
+   transform:translateX(0px) scale(1);
+  }
+}
+@keyframes introAnimation{
+  100%{
+      background-position:0% 50%;
+  }
+  0%{
+      background-position: 200% 50%
+  }
+}
+@keyframes nameTransition{
+   100%{
+    font-family: "Moriai One";
+    }
+    90%{
+      font-family:"Rubik Puddles";
+    }
+    80%{
+      font-family:"Doto";
+    }
+    70%{
+      font-family:"Delius Swash Caps";
+    }
+    60%{
+      font-family:"Pattaya";
+    }
+    50%{
+      font-family:"Allura";
+    }
+    40%{
+      font-family:"Iceberg";
+    }
+    30%{
+      font-family: "Splash";
+    }
+    20%{
+      font-family:"Condiment";
+    }
+    10%{
+      font-family:"Nosifer";
+    }
+    0%{
+    }
+}

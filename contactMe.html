@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles/template.css">
+  <link rel="stylesheet" href="styles/contactMe.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Allura&family=Condiment&family=Delius+Swash+Caps&family=Doto:wght@100..900&family=Iceberg&family=Moirai+One&family=Nosifer&family=Pattaya&family=Poetsen+One&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik+Puddles&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&family=Splash&family=Zen+Dots&display=swap"
+    rel="stylesheet">
+  <link rel="shortcut icon" type="icon" sizes="32x32" href="/assets/tabIcon/contactIcon.png" />
+  <title>Contact Me</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="container-title">
+      <h1><a href="index.html" class="title">Contact Me</a></h1>
+    </div>
+    <div class="main-container border">
+      <video autoplay muted loop src="assets/Background.mp4" class="background-container"></video>
+      <div class="second-container">
+        <div class="form-container">
+          <div class="info-card">
+            <div class="presetPreference">
+              <a
+                href="https://earth.google.com/web/search/albany+new+york/@39.70122123,-74.32309553,310.48139029a,6016812.6826787d,35y,-0h,0t,0r/data=Cn4aUBJKCiUweDg5ZGUwYTM0Y2M0ZmZiNGI6MHhlMWExNjMxMmEwZTcyOGM0GfbF77eHU0VAIbTspBlmcFLAKg9hbGJhbnkgbmV3IHlvcmsYAiABIiYKJAmQt-nKx91EQBHyg4DI0T_tvxmMFiuHm44OwCHOGyMUziRkwEICCAFCAggASg0I____________ARAA"><img
+                  src="assets/LocationGlobe.png" class="globe"></a>
+            </div>
+            <div class="presetPreference">
+              <p class="information">Location: Albany, Earth</p>
+              <p class="information">Email: AxTaylor@proton.me</p>
+            </div>
+            <div class="presetPreference">
+              <div class="social-container">
+                <img src="assets/github.png" alt="github profile" class="social-links"
+                  onclick="location.href='https://github.com/univxrse'" />
+                <img src="assets/LinkedIn-Icon.png" alt="linkedIn profile" class="social-links"
+                  onclick="location.href='https://www.linkedin.com/'" />
+              </div>
+            </div>
+          </div>
+          <div class="second-form">
+            <h1 class="presetPreference test email-title font">Send Me An Email</h1>
+            <form action="https://formsubmit.co/xniverse@proton.me" method="POST">
+              <div class="top-part">
+                <div class="inner-form">
+                  <input type="text" id="name" class="inputStyle presetPreference" placeholder="Name">
+                </div>
+                <div class="inner-form">
+                  <input type="text" id="email" class="inputStyle presetPreference" placeholder="Email">
+                </div>
+              </div>
+              <div class="inner-form">
+                <textarea id="message"
+                  placeholder="“Here's to the crazy ones. The misfits. The rebels. The troublemakers. The round pegs in the square holes. The ones who see things differently. They're not fond of rules. And they have no respect for the status quo. You can quote them, disagree with them, glorify or vilify them. About the only thing you can't do is ignore them. Because they change things. They push the human race forward. And while some may see them as the crazy ones, we see genius. Because the people who are crazy enough to think they can change the world, are the ones who do.” ― Steve Jobs"
+                  class="textarea"></textarea>
+              </div>
+            </form>
+            <button type="submit" class="btn presetPreference">Submit</button>
+          </div>
+          <button type="submit" class="presetPreference test email-button font" id="form" onclick="openForm()">Send Me
+            An
+            Email</button>
+          <div class="mobile-form" id="m-form">
+            <div class="mobile-inner-form">
+              <input type="text" id="name" class="inputStyle presetPreference" placeholder="Name">
+              <input type="text" id="email" class="inputStyle presetPreference" placeholder="Email">
+            </div>
+            <div class="mobile-inner-form">
+              <textarea id="message" placeholder="“Here's to the crazy ones. The misfits. The rebels. The troublemakers. The round pegs in the square holes. The ones who see things differently. They're not fond of rules. And they have no respect for the status quo. You can quote them, disagree with them, glorify or vilify them. About the only thing you can't do is ignore them. Because they change things. They push the human race forward. And while some may see them as the crazy ones, we see genius. Because the people who are crazy enough to think they can change the world, are the ones who do.” 
+               ― Steve Jobs" class="textarea"></textarea>
+            </div>
+            <div class="container-holder">
+              <button type="submit" class="btn presetPreference font">Submit</button>
+              <button class="btn presetPreference" onclick="closeForm()">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="link-container">
+      <ul class="nav-links border">
+        <li><a href="projects.html" class="link">Projects</a></li>
+        <li><a href="contactMe.html" class="link">Contact</a></li>
+        <a href="index.html" class="home-icon">
+          <div></div>
+        </a>
+        <li><a href="aboutMe.html" class="link">About</a></li>
+        <li><a href="Currently.html" class="link">Currently</a></li>
+      </ul>
+    </div>
+  </div>
+</body>
+<script src="script/script.js"></script>
+
+</html>
