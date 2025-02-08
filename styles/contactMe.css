@@ -54,7 +54,6 @@
   outline:none;
   transition:0.3s ease-in-out;
   overflow:hidden;
-  overflow-y:scroll;
 }
 .top-part{
   display:flex;
