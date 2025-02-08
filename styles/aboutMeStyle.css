@@ -209,7 +209,6 @@ font-size:2.5rem;
 padding:5px;
 color:white;
 cursor:pointer;
-transition:0.5s ease-in-out;
 background:transparent;
 border-radius:15px;
 border:1px solid var(--default-outline);
