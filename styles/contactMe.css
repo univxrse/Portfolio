@@ -173,6 +173,7 @@ align-self:center;
 .email-button{
   display:flex;
   justify-content:center;
+  transition:none;
   margin-top:10px;
   cursor:pointer;
 }
