@@ -24,7 +24,6 @@ function openExperience(){
   return mobileExperience.classList.add("active")
 }
 }
-
 function closeMobile(){
   mobileBio.classList.remove("active")
   mobileSkill.classList.remove("active")
@@ -39,9 +38,6 @@ function openForm(){
 function closeForm(){
   emailForm.classList.remove("active")
   mobileForm.classList.remove("active")
-}
-function closeSummary(){
-close.style.display = "none"
 }
 function revealFace(){
 portrait.innerHTML = `<img src='assets/faceReveal/angry-memoji.png' class="profile-pic"/>`
