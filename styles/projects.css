@@ -3,22 +3,28 @@
   display:flex;
   flex-direction:row;
   align-items:center;
-  overflow-x:scroll;
+  overflow-y:hiden;
   width:100%;
   height:95%;
 }
 .project-limit{
   display:flex;
   align-items:center;
+  overflow-x:scroll;
+  overflow-y:hidden;
   height:100%;
   width:100%;
 }
-.projects-container::-webkit-scrollbar-track{
+.project-limit::-webkit-scrollbar{
+  display:flex;
+}
+.project-limit::-webkit-scrollbar-track{
   background:transparent;
+  margin:3rem;
   border-radius:20px;
   box-shadow: inset 0 0 5px var(--main-color);
 }
-.projects-container::-webkit-scrollbar-thumb{
+.project-limit::-webkit-scrollbar-thumb{
   background:var(--main-color);
   border-radius:20px;
 }
